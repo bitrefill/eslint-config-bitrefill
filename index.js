@@ -10,6 +10,7 @@ module.exports = {
   plugins: ['import', 'jest', 'jsx-a11y', 'react', 'prettier', 'standard'],
   env: {
     node: true,
+    'jest/globals': true,
   },
   parserOptions: {
     ecmaVersion: 2017,
