@@ -33,7 +33,6 @@ module.exports = {
         printWidth: 80,
         trailingComma: 'es5',
         singleQuote: true,
-        semi: false,
       },
     ],
     'react/sort-comp': [
@@ -43,12 +42,6 @@ module.exports = {
           '/^displayName+$/',
           '/^propTypes+$/',
           '/^contextTypes+$/',
-          '/^queries+$/',
-          '/^requiredQueries+$/',
-          '/^keyPaths+$/',
-          '/^authed+$/',
-          '/^mounted+$/',
-          '/^getInitialProps+$/',
           'lifecycle',
           '/^on.+$/',
           '/^handle.+$/',
@@ -60,4 +53,4 @@ module.exports = {
       },
     ],
   },
-}
+};
