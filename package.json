@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-bitrefill",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Eslint config with react support",
   "main": "index.js",
   "repository": "eslint-config-bitrefill",
