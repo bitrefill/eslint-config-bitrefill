@@ -7,10 +7,19 @@ module.exports = {
     'prettier/react',
     'prettier/standard',
   ],
-  plugins: ['import', 'jest', 'jsx-a11y', 'react', 'prettier', 'standard'],
+  plugins: [
+    'import',
+    'jest',
+    'jsx-a11y',
+    'react',
+    'prettier',
+    'standard',
+    'cypress',
+  ],
   env: {
     node: true,
     'jest/globals': true,
+    'cypress/globals': true,
   },
   parserOptions: {
     ecmaVersion: 2017,

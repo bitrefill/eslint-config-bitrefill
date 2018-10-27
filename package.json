@@ -37,5 +37,8 @@
     "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "prettier": "^1.7.4"
+  },
+  "devDependencies": {
+    "eslint-plugin-cypress": "^2.0.1"
   }
 }
