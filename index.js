@@ -7,6 +7,11 @@ module.exports = {
     'prettier/react',
     'prettier/standard',
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   plugins: [
     'import',
     'jest',
