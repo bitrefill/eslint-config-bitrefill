@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-bitrefill",
-  "version": "1.1.5",
+  "version": "2",
   "description": "Eslint config with react support",
   "main": "index.js",
   "repository": "eslint-config-bitrefill",
@@ -12,32 +12,23 @@
   },
   "keywords": [
     "eslint",
-    "eslintconfig",
-    "import",
-    "jest",
-    "jsx-a11y",
-    "node",
-    "prettier",
-    "promise",
-    "react",
-    "standard"
+    "eslintconfig"
   ],
-  "author": "littlemooon",
   "dependencies": {
-    "babel-eslint": "^8.0.1",
-    "eslint": "^5.12.0",
-    "eslint-config-prettier": "^2.6.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-cypress": "^2.2.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^21.2.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-node": "^5.2.0",
-    "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-react": "^7.4.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "prettier": "^1.7.4"
+    "eslint-config-standard": "^17.1.0",
+    "eslint-import-resolver-typescript": "^3.6.0"
   },
-  "devDependencies": {}
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.47.0",
+    "eslint-plugin-import": "2.28.0",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-security": "^1.7.1",
+    "jest": "^29.6.4"
+  }
 }
