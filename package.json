@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-bitrefill",
-  "version": "2",
+  "version": "2.0.0",
   "description": "Eslint config with react support",
   "main": "index.js",
   "repository": "eslint-config-bitrefill",
@@ -16,11 +16,11 @@
   ],
   "dependencies": {
     "eslint-config-standard": "^17.1.0",
-    "eslint-import-resolver-typescript": "^3.6.0",
-    "@typescript-eslint/eslint-plugin": "^6.4.1",
-    "@typescript-eslint/parser": "^6.4.1"
+    "eslint-import-resolver-typescript": "^3.6.0"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
     "eslint": "^8.47.0",
     "eslint-plugin-import": "2.28.1",
     "eslint-plugin-jest": "^27.2.3",
