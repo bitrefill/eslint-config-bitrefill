@@ -7,6 +7,7 @@ module.exports = {
         'plugin:import/recommended',
         'plugin:import/typescript',
         'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/stylistic',
         'plugin:promise/recommended',
         'plugin:security/recommended'
     ],
@@ -22,7 +23,7 @@ module.exports = {
     ],
     settings: {
         'import/parsers': {
-            '@typescript-eslint/parser': ['.ts', '.tsx',]
+            '@typescript-eslint/parser': ['.ts', '.tsx', '.js']
         },
         'import/extensions': ['.js', '.ts'],
         'import/resolver': { typescript: true, node: true }
@@ -40,7 +41,11 @@ module.exports = {
             ignoreStrings: true,
             ignoreTemplateLiterals: true,
         }],
-        'space-before-function-paren': 0,
+        'space-before-function-paren': [2, {
+            anonymous: 'always',
+            named: 'never',
+            asyncArrow: 'always'
+        }],
         'comma-dangle': 0,
         'function-paren-newline': 0,
         'operator-linebreak': 0,
@@ -108,13 +113,19 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': 1,
         '@typescript-eslint/no-empty-function': 'warn',
         '@typescript-eslint/no-non-null-assertion': 0,
-        '@typescript-eslint/ban-types': 'warn',
+        '@typescript-eslint/ban-types': 2,
         '@typescript-eslint/no-namespace': 'warn',
         '@typescript-eslint/no-inferrable-types': 'warn',
+        '@typescript-eslint/prefer-for-of': 'warn',
+        '@typescript-eslint/consistent-indexed-object-style': 'warn',
+        '@typescript-eslint/consistent-type-definitions': 'warn',
+        '@typescript-eslint/array-type': 'warn',
+        '@typescript-eslint/type-annotation-spacing': 'error',
 
         'import/no-unresolved': ['error', { commonjs: true, caseSensitive: true }],
 
         'security/detect-object-injection': 0,
+        'func-call-spacing': [2, 'never'],
     },
     overrides: [
         {
@@ -122,7 +133,7 @@ module.exports = {
                 '*.js'
             ],
             rules: {
-                'import/order': 0
+                'import/order': 0,
             }
         },
         {
